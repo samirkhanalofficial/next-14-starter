@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextJS Starter
 
 ## Getting Started
 
-First, run the development server:
+Node version: v20.15.1
+Please follow these steps to setup your project,
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the project `git clone <project-url>`
+2. open the project & install all dependiencies
+   ```bash
+   npm i
+   ```
+3. Run the project in development mode
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Run the project in production mode
+   - Add this to `.env`
+   ```bash
+   NODE_ENV=production
+   ```
+   - Run this command
+   ```bash
+   npm run build && npm start
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Rules
 
-## Learn More
+- create a branch with your username and feature name
+  ```bash
+  git branch <your-github-username>/<feature-name>
+  git checkout <your-github-username>/<feature-name>
+  ```
+  Example:
+  ```bash
+  git branch samirkhanalofficial/navbar
+  git checkout samirkhanalofficial/navbar
+  ```
+- After the task is assigned to you via `project management tool` i.e. `basecamp/jira`.
+  - mark it as `IN PROGRESS` when starting the project
+  - mark it as `IN REVIEW` when your code is in review. Make sure to create a pull request to `TEST` branch. Assign a code review request to your senior developer.
+  - mark it as `TESTING` when tester is testing the branch on TEST branch.
+  - mark it `DONE` after finishing the task
+- Use commit convenctions for better commit message. Check docs at [Commit Lint](https://commitlint.js.org/guides/getting-started.html)
+  ```
+  git commit -am '<fix/refactor/feature>(jira-ticket-number):<commit-message>'
+  ```
+  Example:
+  ```bash
+  git commit -am 'fix(hf-34): fixed layout overlapping issue'
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+## Resources
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Test URL](tag-wheel-frontend.vercel.app)
+- [FIGMA](https://www.figma.com/design/iBHuFtieshCmR9Ay6msEqo/Home-Friend?node-id=0-1&t=SCvLD8pxWS9WMtvh-1)
