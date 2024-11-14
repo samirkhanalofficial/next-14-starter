@@ -30,13 +30,13 @@ Please follow these steps to setup your project,
 
 - create a branch with your username and feature name
   ```bash
-  git branch <your-github-username>/<feature-name>
-  git checkout <your-github-username>/<feature-name>
+  git branch <your-github-username>/subject/<feature-name>
+  git checkout <your-github-username>/subject/<feature-name>
   ```
   Example:
   ```bash
-  git branch samirkhanalofficial/navbar
-  git checkout samirkhanalofficial/navbar
+  git branch samirkhanalofficial/feature/navbar
+  git checkout samirkhanalofficial/feature/navbar
   ```
 - After the task is assigned to you via `project management tool` i.e. `basecamp/jira`.
   - mark it as `IN PROGRESS` when starting the project
@@ -45,14 +45,9 @@ Please follow these steps to setup your project,
   - mark it `DONE` after finishing the task
 - Use commit convenctions for better commit message. Check docs at [Commit Lint](https://commitlint.js.org/guides/getting-started.html)
   ```
-  git commit -am '<fix/refactor/feature>(jira-ticket-number):<commit-message>'
+  git commit -am '<title>(scope): <commit-message>'
   ```
   Example:
   ```bash
-  git commit -am 'fix(hf-34): fixed layout overlapping issue'
+  git commit -am 'fix(config): tsconfig updated to avoid unused imports and variables'
   ```
-
-## Resources
-
-- [Test URL](tag-wheel-frontend.vercel.app)
-- [FIGMA](https://www.figma.com/design/iBHuFtieshCmR9Ay6msEqo/Home-Friend?node-id=0-1&t=SCvLD8pxWS9WMtvh-1)
