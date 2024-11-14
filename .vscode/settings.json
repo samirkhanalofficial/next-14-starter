@@ -1,0 +1,6 @@
+{
+  "i18n-ally.localesPaths": ["messages", "src/i18n"], // E.g. "./messages"
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.namespace": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}
