@@ -1,8 +1,6 @@
-"use client";
 import React from "react";
-import { GetExampleById } from "../service/example.service";
+import { exampleType } from "../types/example.type";
 
-export default function Example() {
-  const { response } = GetExampleById("1");
-  return <div>Response : {response?.name}</div>;
+export default function Example(props: exampleType) {
+  return <div>Response : {props.name}</div>;
 }

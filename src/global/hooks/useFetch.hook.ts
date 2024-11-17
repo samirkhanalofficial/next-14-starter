@@ -4,23 +4,24 @@ import { useState } from "react";
 import { requestMethod } from "../types/request-method.type";
 import { toast } from "react-toastify";
 
-export default function useFetch<RESPONSETYPE, BODYTYPE>({
-  url,
-  method,
-  body,
-  showErrorInToast = false,
-  requiresAuthentication = false,
-}: {
-  url: string;
-  method: requestMethod;
-  body?: BODYTYPE;
-  showErrorInToast?: boolean;
-  requiresAuthentication?: boolean;
-}) {
+export default function useFetch<RESPONSETYPE, BODYTYPE>() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState();
   const [response, setResponse] = useState<RESPONSETYPE | undefined>();
-  async function fetchData() {
+
+  async function fetchData({
+    url,
+    method,
+    body,
+    showErrorInToast = false,
+    requiresAuthentication = false,
+  }: {
+    url: string;
+    method: requestMethod;
+    body?: BODYTYPE;
+    showErrorInToast?: boolean;
+    requiresAuthentication?: boolean;
+  }) {
     try {
       setLoading(true);
 

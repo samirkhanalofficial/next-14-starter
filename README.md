@@ -16,7 +16,13 @@ Please follow these steps to setup your project,
    npm run dev
    ```
 
-4. Run the project in production mode
+4. Run the storybook
+
+   ```bash
+   npm run storybook
+   ```
+
+5. Run the project in production mode
    - Add this to `.env`
    ```bash
    NODE_ENV=production
