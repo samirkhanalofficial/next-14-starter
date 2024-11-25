@@ -50,10 +50,40 @@ Please follow these steps to setup your project,
   - mark it as `TESTING` when tester is testing the branch on TEST branch.
   - mark it `DONE` after finishing the task
 - Use commit convenctions for better commit message. Check docs at [Commit Lint](https://commitlint.js.org/guides/getting-started.html)
-  ```
-  git commit -am '<title>(scope): <commit-message>'
-  ```
-  Example:
-  ```bash
-  git commit -am 'fix(config): tsconfig updated to avoid unused imports and variables'
-  ```
+
+  - For title use these specified keywords:
+    - `feat` : New feature
+    - `fix` : Bug fix
+    - `docs` : Documentation changes
+    - `style` : Changes that do not affect the meaning of the code (white-space, formatting, etc.)
+    - `refactor` : Code changes that neither fix a bug nor add a feature
+    - `perf` : Performance improvement
+    - `test` : Adding missing tests or correcting existing tests
+    - `build` : Changes that affect the build system or external dependencies (example scopes: npm)
+    - `ci` : Changes to CI configuration files and scripts
+    - `chore` : Other changes that don't modify src or test files
+    - `revert` : Reverts a previous commit
+  - For Scope use these specified keywords:
+    - `setup` : Project setup
+    - `config` : Configuration files
+    - `deps` : Dependency updates
+    - `feature` : Feature-specific changes
+    - `bug` : Bug fixes
+    - `docs` : Documentation
+    - `style` : Code style/formatting
+    - `refactor` : Code refactoring
+    - `test` : Tests
+    - `build` : Build scripts or configuration
+    - `ci` : Continuous integration
+    - `release` : Release related changes
+    - `other` : Other changes
+
+```
+git commit -am '<title>(scope): <commit-message>'
+```
+
+Example:
+
+```bash
+git commit -am 'fix(config): tsconfig updated to avoid unused imports and variables'
+```
