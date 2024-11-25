@@ -10,7 +10,8 @@
     "lint": "next lint",
     "commitlint": "commitlint --edit",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "start-storybook": "serve storybook-static -p 6006"
   },
   "dependencies": {
     "joi": "^17.13.3",
@@ -18,7 +19,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.53.2",
-    "react-toastify": "^10.0.6"
+    "react-toastify": "^10.0.6",
+    "serve": "^14.2.4"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
